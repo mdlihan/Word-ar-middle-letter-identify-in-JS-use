@@ -1,0 +1,16 @@
+function inicial(st){
+    var texto = [st];
+    texto.map((e)=>{
+      var word=e;
+       var wordLength = e.length;
+       var center=(wordLength/2).toFixed(0)
+       
+      if (wordLength%2==0) {
+         console.log(`${word[center-1]},${word[center]}`)
+      } else {
+         console.log(word[center-1])
+      }
+    })
+}
+ var na=prompt('Enter any Name')
+inicial(na);
